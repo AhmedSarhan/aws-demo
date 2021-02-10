@@ -1,3 +1,5 @@
+import { withAuthenticator } from 'aws-amplify-react';
+
 function App() {
   return (
     <div className="container">
@@ -6,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
